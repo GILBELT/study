@@ -1,0 +1,21 @@
+本では
+1. git add （ファイル名)
+2. git commit -m "（メッセージ）"
+3. git push
+ですが、このままではうまく行きません。
+2.　と 3. の間に
+` git remote add xxx(リモート名) git@github.com:xxx(ユーザー名)/xxx(リポジトリ) `
+をしてやる必要があります
+
+
+さっき作ったC言語のプログラムを
+` git remote add origin git@github.com:GILBELT/study.git `
+しようとしたときに
+fatal: remote origin already exists.
+というエラーが出てしまいました。
+
+git remote add　コマンドはリモート名とリモートのURLと関連付けるコマンドでした
+
+1. １度関連付けされたリモート名 originは使えない
+2. リモートのURLを別の名前で登録することは可能
+  → ariginで登録するなど
